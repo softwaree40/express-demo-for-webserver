@@ -14,6 +14,6 @@ app.get("/fellowship",(req,res)=>{
 
     res.send("Fellowship home!!")
 })
-
-app.listen(3000,()=>{console.log("Listen on port 3000...")})
+const port = process.env.PORT || 3000
+app.listen(port,()=>{console.log(`Listen on port ${port}...`)})
 
